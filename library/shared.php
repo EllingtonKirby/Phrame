@@ -60,9 +60,9 @@ function callHook() {
 
     $controller = $urlArray[0];
     array_shift($urlArray);
-    $action = $urlArray[0];
+    $action = (isset($urlArray[0])) ? $urlArray[0] : "";
     array_shift($urlArray);
-    $queryString = $urlArray;
+    $queryString = (isset($urlArray[0])) ? $urlArray[0] : "";
 
     $controllerName = $controller;
     $controller = ucwords($controller);
