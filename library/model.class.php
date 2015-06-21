@@ -6,7 +6,6 @@
  * Time: 9:59 PM
  */
 class Model extends SQLQuery {
-    protected $_model;
 
     function __construct() {
 

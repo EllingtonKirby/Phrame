@@ -6,8 +6,8 @@
  * Time: 8:28 PM
  */
 
-define('DS', DIRECTORY_SEPARATOR);
-define('ROOT', dirname(dirname(__FILE__)));
+define('DS', '\\');
+define('ROOT', 'Z:\www.ellington.dev.localhost\public\Phrame');
 
 $url = $_GET['url'];
 

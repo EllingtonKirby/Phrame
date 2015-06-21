@@ -10,6 +10,8 @@ class SQLQuery {
     protected $_dbHandle;
     protected $_result;
 
+    public $_table;
+    public $_model;
     /** Connects to database
      * @param $address
      * @param $account
@@ -43,13 +45,13 @@ class SQLQuery {
 
     function selectAll()
     {
-        $query = 'select * from `' . $this->_table . '`';
+        $query = 'select * from ' . $this->_table;
         return $this->query($query);
     }
 
     function select($id)
     {
-        $query = 'select * from `' . $this->_table . '` where `id` = \'' . mysql_real_escape_string($id) . '\'';
+        $query = 'select * from ' . $this->_table . ' where id = \'' . mysql_real_escape_string($id) . '\'';
         return $this->query($query, 1);
     }
 
