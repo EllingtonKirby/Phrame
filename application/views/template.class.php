@@ -23,7 +23,7 @@ function __construct($controller,$action) {
     {
         $this->variables[$name] = $value;
     }
-    
+
     /** Display Template **/
     function render() {
         extract($this->variables);
